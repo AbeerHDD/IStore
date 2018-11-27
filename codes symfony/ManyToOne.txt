@@ -1,0 +1,6 @@
+
+/**
+* @ORM\ManyToOne(targetEntity="YyyyyBundle\Entity\xxxxx")
+*/
+
+private $var;

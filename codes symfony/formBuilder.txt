@@ -1,0 +1,12 @@
+$obj=new Object();
+$form=$this->createFormBuilder($obj)
+            ->add("champs1","text",array("label"=>"champs1 :"))
+            ->add("testavec_OnTomany","entity",array("label"=>"champs111 : ",
+                                          "class"=>"YyyyBundle:Table",
+                                          "property"=>"champs dans la table"
+                                            ))
+            ->add("ajouter","submit")    ;
+
+$form2=$form->getForm();
+
+return $this->render('YyyyyBundle:Default:add.html.twig', array("form"=>$form2->createView()));

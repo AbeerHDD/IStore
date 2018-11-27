@@ -1,0 +1,13 @@
+{{ form_start(form) }}
+
+        <legend>Ajouter</legend>
+
+        <div class="form-group">
+            <label class="control-label"> {{ form_label(form.chazmps1 ) }}</label>
+            {{ form_widget(form.nom,{'attr': {'class': 'form-control'}}) }}
+        </div>       
+	
+
+        {{ form_widget(form.ajouter, {'attr': {'class': 'btn btn-primary'}}) }}
+
+{{ form_end(form) }}
